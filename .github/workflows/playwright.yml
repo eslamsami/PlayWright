@@ -2,7 +2,7 @@ name: Morning Pipeline for playwright tests
 on:
   push:
     branches: 
-      -'**'
+      - '**'
   pull_request:
     branches: [ main ]
 jobs:
@@ -21,7 +21,7 @@ jobs:
     - name: Run Playwright tests
       run: npm run test
 
-    - name: Upload Playwirht Report
+    - name: Upload Playwright Report
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
@@ -33,5 +33,5 @@ jobs:
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
-        path: alure-report/
+        path: allure-report/
         retention-days: 30
