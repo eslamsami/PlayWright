@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "clean:reports": "rimraf allure-results allure-report && mkdirp allure-results",
-  "script:to:run": "npx playwright test FilterItemPom.Spec.ts --workers=1",
-  "generate:reports": "npx allure generate ./allure-results --clean",
-  "open:reports": "npx allure open ./allure-report",
-  "test": "npm run clean:reports && npm run script:to:run && npm run generate:reports && npm run open:reports"
-}
-,
+    "clean:reports": "rimraf allure-results allure-report && mkdirp allure-results",
+    "script:to:run": "npx playwright test FilterItemPom.Spec.ts --workers=1",
+    "generate:reports": "npx allure generate ./allure-results --clean",
+    "open:reports": "npx allure open ./allure-report",
+    "test": "npm run clean:reports && npm run script:to:run && npm run generate:reports "
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
