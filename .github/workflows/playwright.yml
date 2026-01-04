@@ -29,7 +29,7 @@ jobs:
         path: playwright-report/
         retention-days: 30
 
-    - name: Upload alure Report
+    - name: Upload allure Report
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
