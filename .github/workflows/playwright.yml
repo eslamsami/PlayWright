@@ -20,7 +20,7 @@ jobs:
       run: npx playwright install chromium --with-deps
     - name: Run Playwright tests
       run: npm run test
-      
+
     - name: Upload allure Report
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
