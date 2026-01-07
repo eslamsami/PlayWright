@@ -1,10 +1,12 @@
 name: Morning Pipeline for playwright tests
 on:
   push:
-    branches: 
+    branches:
       - '**'
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+
 jobs:
   Playwright-Tests:
     timeout-minutes: 60
