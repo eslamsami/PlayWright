@@ -10,7 +10,7 @@ test('AddItem', async ({ page,loginpage,productpage,checkOutPage }) => {
 
 await page.goto('https://www.saucedemo.com/');
 await loginpage.EnterName(TestData.username);
-//await loginpage.Pass(TestData.password);
+await loginpage.Pass(TestData.password);
 await loginpage.PressLogin();
 await productpage.FilterLowToHigh();
 await productpage.AddSauceLabOnesie();
